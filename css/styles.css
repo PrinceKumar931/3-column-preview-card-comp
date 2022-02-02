@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body:not(h1) {
+  font-size: 15px;
+}
+.main-box {
+  width: 90%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 460px;
+  border-radius: 10px;
+}
+.box {
+  box-sizing: border-box;
+  padding: 40px 40px;
+}
+.headings {
+  font-family: "Big Shoulders Display", cursive;
+  margin: 30px 0;
+  color: hsl(0, 0%, 95%);
+}
+.paragraphs {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.box-1 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: hsl(31, 77%, 52%);
+}
+.box-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.box-3 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(179, 100%, 13%);
+}
+.learn-more {
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 25%/80%;
+  margin-top: 50%;
+  padding: 10px;
+  width: 120px;
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+}
+
+.learn-more:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+.btn-1:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+.btn-2:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+.btn-3:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* ---------------MEDIA QUERIES-------------------- */
+@media screen and (max-width: 670px) {
+  .main-box {
+    width: 90%;
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    border-radius: 10px;
+  }
+
+  .box
+  {
+      height: 350px;
+      padding: 40px;
+  }
+
+  .learn-more {
+    border-radius: 25%/80%;
+    margin-top: 30px;
+    background-color: hsl(0, 0%, 95%);
+  }
+
+  .box-1
+  {
+      border-radius: 10px 10px 0  0;
+  }
+  .box-3{
+      border-radius: 0 0 10px 10px;
+  }
+}
